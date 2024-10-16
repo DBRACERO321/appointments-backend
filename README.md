@@ -96,6 +96,7 @@ DELETE-> /appointments/:id
 ```
 
 #PAYLOAD DE EJEMPLO PARA CREAR
+```
 {
     "clientFirstName": "Darwin Alexander",
     "clientLastName": "Bracero Puente",
@@ -103,6 +104,8 @@ DELETE-> /appointments/:id
     "startTime": "17:00",
     "endTime": "18:00"
 }
+```
+
 
 #CONTROLADOR
 ```
