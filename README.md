@@ -110,7 +110,10 @@ y lanzar mensajes de validacion tanto como para campos requeridos y tipo de dato
 
 #SERVICIO
 ```
- El servicio AppointmentService implementa un patrón de diseño Singleton para gestionar las citas en memoria. Esto asegura que solo exista una instancia de la clase durante toda la ejecución de la aplicación, evitando así la pérdida de información al prevenir la creación de múltiples instancias en diferentes espacios de memoria.
+ El servicio AppointmentService implementa un patrón de diseño Singleton para gestionar las citas en memoria.
+  Esto asegura que solo exista una instancia de la clase durante toda la ejecución de la aplicación, 
+  evitando así la pérdida de información al prevenir la creación de múltiples instancias 
+  en diferentes espacios de memoria.
 ```
 #ENTIDAD
 ```
