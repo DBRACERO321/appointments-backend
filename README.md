@@ -82,8 +82,10 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 #   a p p o i n t m e n t s - b a c k e n d 
- L a   a p l i c a c i o n   e s t �   c o n s t u i d a   c o n   N e s t   j s   f r a m e w o r k   d e   N o d e . j s   p a r a   s e r v i d o r 
- I m p l e m e n t a   u n   s o l o   m o d u l o   l l a m a d o   a p p o i n t m e n t 
+```
+La aplicación está construida con el framework NestJS de Node.js para gestionar el servidor.
+Implementa un solo módulo llamado appointment, el cual se encarga de manejar toda la lógica relacionada con la gestión de citas.
+```
 
  #E N D P O I N T S   I M P L E M E N T A D O S :
  ```
