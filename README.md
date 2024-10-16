@@ -82,40 +82,47 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 #   a p p o i n t m e n t s - b a c k e n d 
- L a   a p l i c a c i o n   e s t �   c o n s t u i d a   c o n   N e s t   j s   f r a m e w o r k   d e   N o d e . j s   p a r a   s e r v i d o r 
+ L a   a p l i c a c i o n   e s t �   c o n s t u i d a   c o n   N e s t   j s   f r a m e w o r k   d e   N o d e . j s   p a r a   s e r v i d o r 
  I m p l e m e n t a   u n   s o l o   m o d u l o   l l a m a d o   a p p o i n t m e n t 
 
- E N D P O I N T S   I M P L E M E N T A D O S 
+ #E N D P O I N T S   I M P L E M E N T A D O S :
+ ```
 GET -> /appointments
 POST -> /appointments
 PUT -> /appointments/:id
 DELETE-> /appointments/:id
-==========================================================================================================================
-CONTROLADOR
-implementa un solo controlador AppointmentController que recibe las solicitudas e interactua con el servicio para 
-crear actualizar eliminar y listar
-===========================================================================================================================
-VALIDACIONES IMPLEMENTADAS
-El Back usa un Global pipe con ayuda de class-validator para impletentar un patron DTO que ayuda a controlar las entradas de las peticiones HTTP
-y lanzar mensajes de validacion tanto como para campos requeridos y tipo de datos.
-===========================================================================================================================
-SERVICIO
- E l   s e r v i c i o   A p p o i n t m e n t S e r v i c e   i m p l e m e n t a   u n   p a t r o n   d e   
-d i s e � o   s i n g l e t o n   p a r a   d a r l e   s o l u c i � n   a l   m a n e j o   d e   c i t a s  
- e n   m e m o r i a   y a   q u e   s e   a s e g u r a   q u e   s o l o   e x i s t a   u n a  
- i n s t a n c i a   d e   l a   c l a s e   e v i t a n d o   p e r d e r   l a   i n f o r m a c i o n   a  
- c a u s a   d e   q u e   s e   v u e l v a   a   i n s t a n c i a r la misma
-e n   o t r o   e s p a c i o   d e   m e m o r i a 
+```
+#CONTROLADOR
+```
+implementa un solo controlador AppointmentController que recibe las solicitudas e interactua con el servicio para:
+crear 
+actualizar
+eliminar
+listar
+```
 
+#VALIDACIONES IMPLEMENTADAS
+```
+El Back usa un Global pipe con ayuda de class-validator para impletentar un patron DTO que ayuda a controlar 
+las entradas de las peticiones HTTP
+y lanzar mensajes de validacion tanto como para campos requeridos y tipo de datos.
+```
+
+#SERVICIO
+```
+ El servicio AppointmentService implementa un patrón de diseño Singleton para gestionar las citas en memoria. Esto asegura que solo exista una instancia de la clase durante toda la ejecución de la aplicación, evitando así la pérdida de información al prevenir la creación de múltiples instancias en diferentes espacios de memoria.
+```
+#ENTIDAD
+```
 Tiene una sola clase o entidad Appointment con los atributos con la responsabilidad de definir la esctructura de datos ausar
-para despues crear una lista llamada appointmentList: Appointment[] = [] que contendr� todos los objetos del tipo Appointment
+para despues crear una lista llamada appointmentList: Appointment[] = [] que contendr� todos los objetos del tipo Appointment
 id: string,
 clientFirstName: string,
 clientLastName: string,
 date: string,
 startTime: string,
 endTime: string,
-
+```
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
  
