@@ -94,6 +94,16 @@ POST -> /appointments
 PUT -> /appointments/:id
 DELETE-> /appointments/:id
 ```
+
+#PAYLOAD DE EJEMPLO PARA CREAR
+{
+    "clientFirstName": "Darwin Alexander",
+    "clientLastName": "Bracero Puente",
+    "date": "2024-05-01",
+    "startTime": "17:00",
+    "endTime": "18:00"
+}
+
 #CONTROLADOR
 ```
 implementa un solo controlador AppointmentController que recibe las solicitudas e interactua con el servicio para:
